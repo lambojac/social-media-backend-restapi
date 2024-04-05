@@ -1,0 +1,29 @@
+{
+  "name": "social-media-rest-api",
+  "version": "1.0.0",
+  "description": "\"backend restapi for social media application\"",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lambojac/social-media-backend-restapi.git"
+  },
+  "keywords": [
+    "social",
+    "media",
+    "backend",
+    "restapi"
+  ],
+  "author": "adamo kehinde",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lambojac/social-media-backend-restapi/issues"
+  },
+  "homepage": "https://github.com/lambojac/social-media-backend-restapi#readme",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
