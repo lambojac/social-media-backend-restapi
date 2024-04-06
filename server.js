@@ -3,7 +3,7 @@ import express from "express";
 import dotenv from "dotenv";
 import bodyParser from "body-parser";
 import connectDB  from "./Config/db.js";
-// import errorHandler from "./middleware/errorMiddleware.js";
+import errorHandler from "./Middleware/errorMiddleware.js";
 import cookieParser from "cookie-parser";
 
 const app = express();
@@ -21,8 +21,8 @@ app.use(express.urlencoded({extended: false}));
 app.use(bodyParser.json());
 
 // routes middleware
-app.use("/api/users", userRouter);
-app.use("/api/products", productRouter);
+// app.use("/api/users", userRouter);
+// app.use("/api/products", productRouter);
 
 
 //route
