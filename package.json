@@ -4,7 +4,7 @@
   "description": "\"backend restapi for social media application\"",
   "main": "server.js",
   "scripts": {
-    "dev":"nodemon server.js",
+    "dev": "nodemon server.js",
     "start": "node server.js"
   },
   "repository": {
@@ -24,6 +24,7 @@
   },
   "homepage": "https://github.com/lambojac/social-media-backend-restapi#readme",
   "dependencies": {
-    "express": "^4.19.2"
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2"
   }
 }
