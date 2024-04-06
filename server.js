@@ -3,6 +3,7 @@ import express from "express";
 import dotenv from "dotenv";
 import bodyParser from "body-parser";
 import connectDB  from "./Config/db.js";
+import RegisterUser from "./Routes/RegisterUser.js";
 import errorHandler from "./Middleware/errorMiddleware.js";
 import cookieParser from "cookie-parser";
 
@@ -21,7 +22,7 @@ app.use(express.urlencoded({extended: false}));
 app.use(bodyParser.json());
 
 // routes middleware
-// app.use("/api/users", userRouter);
+ app.use("/api/users", RegisterUser);
 // app.use("/api/products", productRouter);
 
 

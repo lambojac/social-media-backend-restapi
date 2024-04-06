@@ -1,4 +1,4 @@
-import User from "../models/userModel.js";
+import User from "../Models/User.js";
 import asynchandler from "express-async-handler";
 import bcrypt from "bcryptjs";
 import genToken from "./tokenGen.js";
