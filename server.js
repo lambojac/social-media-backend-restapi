@@ -6,6 +6,7 @@ import connectDB  from "./Config/db.js";
 import RegisterUser from "./Routes/RegisterUser.js";
 import errorHandler from "./Middleware/errorMiddleware.js";
 import cookieParser from "cookie-parser";
+import userPost from "./Controllers/userPost.js";
 
 const app = express();
 dotenv.config();
@@ -23,7 +24,7 @@ app.use(bodyParser.json());
 
 // routes middleware
  app.use("/api/users", RegisterUser);
-// app.use("/api/products", productRouter);
+app.use("/api/post", userPost);
 
 
 //route
