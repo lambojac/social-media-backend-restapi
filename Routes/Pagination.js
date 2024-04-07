@@ -1,6 +1,6 @@
-import followUser from '../Controllers/Follow.js';
+import seePost from '../Controllers/Pagination.js';
 import express from "express"
 const router = express.Router();
 //Routes
-router.post('/:userId', followUser);
+router.get('/feed/:userId', seePost);
 export default router; 

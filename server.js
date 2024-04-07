@@ -8,7 +8,8 @@ import errorHandler from "./Middleware/errorMiddleware.js";
 import cookieParser from "cookie-parser";
 import userPost from "./Controllers/userPost.js";
 import followUser  from "./Routes/Follow.js";
-
+import seePost from "./Routes/seePost.js";
+import Pagination from "./Routes/Pagination.js"
 const app = express();
 dotenv.config();
 const PORT = process.env.PORT;
@@ -27,7 +28,8 @@ app.use(bodyParser.json());
 app.use("/api/users", RegisterUser);
 app.use("/api/post", userPost);
 app.use("/api/follow",followUser)
-
+app.use("/api/feed",seePost)
+app.use("/pagination",Pagination)
 //route
 app.get("/", (req, res) => {
     res.send("Home Page!");
