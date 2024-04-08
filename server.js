@@ -11,6 +11,7 @@ import followUser  from "./Routes/Follow.js";
 import seePost from "./Routes/seePost.js";
 import Pagination from "./Routes/Pagination.js"
 import CommentAndLikes from "./Routes/CommentAndLikes.js";
+import numberofLikesAndComment from "./Routes/numberOfLikesAndComment.js";
 const app = express();
 dotenv.config();
 const PORT = process.env.PORT;
@@ -32,6 +33,7 @@ app.use("/api/follow",followUser)
 app.use("/api/feed",seePost)
 app.use("/pagination",Pagination)
 app.use("/post", CommentAndLikes)
+app.use("/feed",numberofLikesAndComment)
 //route
 app.get("/", (req, res) => {
     res.send("Home Page!");
