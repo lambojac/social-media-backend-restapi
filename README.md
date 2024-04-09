@@ -23,27 +23,27 @@ express and mongodb
 npm install all dependencies
 node server.js
 #How to Use the Project
-*To Register
+# To Register
 https://social-media-backend-restapi-3.onrender.com/api/users/register
 {name, email, password}
-*To login
+# To login
 https://social-media-backend-restapi-3.onrender.com/api/users/login
 {email, password}
-*To follow a user
+# To follow a user
 https://social-media-backend-restapi-3.onrender.com/api/follow/:userId
 {followUserId}
-#To see a post(get request)
+# To see a post(get request)
 https://social-media-backend-restapi-3.onrender.com/api/feed/userId
-#To create a post
+# To create a post
 https://social-media-backend-restapi-3.onrender.com/api/post/
 {text, attachment, userId}
 # To like a post
 https://social-media-backend-restapi-3.onrender.com/post/:postId/like
 {userId}
-#To comment on a post
+# To comment on a post
 https://social-media-backend-restapi-3.onrender.com/post/:postid/comment
 {userId, text}
-#To see number of likes and comment on a post(get request)
+# To see number of likes and comment on a post(get request)
 https://social-media-backend-restapi-3.onrender.com/feed/:userId
 
 
