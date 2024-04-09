@@ -1,6 +1,6 @@
-#Project's Title
+# Project's Title
 Social media backend Restapi
-#Project Description
+# Project Description
 User Management:
 Registration: Users can sign up and create accounts by providing necessary information.
 Authentication: Users can log in securely using options like JWT or session-based authentication.
@@ -17,12 +17,12 @@ Notifications:
 
 Real-time Notifications: Users receive notifications for mentions, likes, and comments.
 Implementation: Bonus points are available for implementing real-time notifications using websockets or push notifications, enhancing the user experience.
-#Technologies used
+# Technologies used
 express and mongodb
-#How to Install and Run the Project
+# How to Install and Run the Project
 npm install all dependencies
 node server.js
-#How to Use the Project
+# How to Use the Project
 # To Register
 https://social-media-backend-restapi-3.onrender.com/api/users/register
 {name, email, password}
