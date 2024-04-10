@@ -20,7 +20,7 @@ Implementation: Bonus points are available for implementing real-time notificati
 # Technologies used
 express and mongodb
 # How to Install and Run the Project
-npm install all dependencies
+npm install
 node server.js
 # How to Use the Project
 # To Register
@@ -40,10 +40,14 @@ https://social-media-backend-restapi-3.onrender.com/api/post/
 # To like a post
 https://social-media-backend-restapi-3.onrender.com/post/:postId/like
 {userId}
-# To comment on a post
+# To comment on a post(post request)
 https://social-media-backend-restapi-3.onrender.com/post/:postid/comment
 {userId, text}
 # To see number of likes and comment on a post(get request)
 https://social-media-backend-restapi-3.onrender.com/feed/:userId
-
+#To create a notification(post request)
+https://social-media-backend-restapi-3.onrender.com/notifications
+{ recipient_id, action_type, action_data}
+#To get Notification(get request)
+https://social-media-backend-restapi-3.onrender.com/notifications/userId
 
