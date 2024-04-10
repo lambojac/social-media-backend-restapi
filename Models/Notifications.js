@@ -1,9 +1,10 @@
-import mongoose from "mongoose"
+ import mongoose from "mongoose"
 const notificationSchema = new mongoose.Schema({
-    user: { type: mongoose.Schema.Types.ObjectId, ref: 'User' },
-    type: String,
-    postId: { type: mongoose.Schema.Types.ObjectId, ref: 'Post' },
-    createdAt: { type: Date, default: Date.now }
-});
-const Notification = mongoose.model('Notification', notificationSchema)
+    recipient_id: String,
+    action_type: String,
+    action_data: mongoose.Schema.Types.Mixed,
+    seen: { type: Boolean, default: false },
+    created_at: { type: Date, default: Date.now }
+  });
+const Notification = mongoose.model('Notification', notificationSchema);
 export default Notification

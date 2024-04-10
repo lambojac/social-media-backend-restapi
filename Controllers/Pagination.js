@@ -17,7 +17,7 @@ import Post from "../Models/Post.js"
 
         // Find posts from users the current user is following with pagination
         const followingPosts = await Post.find({ user: { $in: user.following } })
-            .populate('user')
+            .populate('user').select("-password")
             .sort({ createdAt: -1 }) // Sort by createdAt descending
             .skip((page - 1) * pageSize)
             .limit(parseInt(pageSize));

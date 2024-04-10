@@ -1,4 +1,3 @@
-import followersModel from "../Models/Followers.js"; // Correct import statement
 import User from "../Models/User.js";
 import asyncHandler from 'express-async-handler';
 
@@ -10,14 +9,14 @@ const followUsers = asyncHandler(async (req, res) => {
 
   try {
     // Check if user exists
-    const user = await User.findById(userId).populate('following', 'username');
+    const user = await User.findById(userId).populate('following', 'username').select("-password")
     console.log(user)
     if (!user) {
       return res.status(404).json({ message: "User not found" });
     }
 
     // Check if follow user exists
-    const followUser = await User.findById(followUserId).populate('followers', 'username');
+    const followUser = await User.findById(followUserId).populate('followers', 'username').select("-password")
     if (!followUser) {
       return res.status(404).json({ message: "User to follow not found" });
     }
