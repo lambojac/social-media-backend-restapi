@@ -45,9 +45,9 @@ https://social-media-backend-restapi-3.onrender.com/post/:postid/comment
 {userId, text}
 # To see number of likes and comment on a post(get request)
 https://social-media-backend-restapi-3.onrender.com/feed/:userId
-#To create a notification(post request)
+# To create a notification(post request)
 https://social-media-backend-restapi-3.onrender.com/notifications
 { recipient_id, action_type, action_data}
-#To get Notification(get request)
+# To get Notification(get request)
 https://social-media-backend-restapi-3.onrender.com/notifications/userId
 
