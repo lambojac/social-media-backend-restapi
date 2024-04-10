@@ -20,8 +20,8 @@ Implementation: Bonus points are available for implementing real-time notificati
 # Technologies used
 express and mongodb
 # How to Install and Run the Project
-npm install
-node server.js
+1 npm install
+2 node server.js
 # How to Use the Project
 # To Register
 https://social-media-backend-restapi-3.onrender.com/api/users/register
