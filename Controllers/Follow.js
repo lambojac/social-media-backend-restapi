@@ -12,7 +12,7 @@ const followUsers = asyncHandler(async (req, res) => {
     const user = await User.findById(userId).populate('following', 'username').select("-password")
     console.log(user)
     if (!user) {
-      return res.status(404).json({ message: "User not found" });
+      return res.status(404).json({ message: "User not found in database" });
     }
 
     // Check if follow user exists
