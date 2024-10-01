@@ -9,7 +9,7 @@ import Post from "../Models/Post.js"
         // Get user's following list
         const user = await User.findById(userId);
         if (!user) {
-            return res.status(404).json({ message: "User not found" });
+            return res.status(404).json({ message: "User not found in database" });
         }
 
         // Find total count of posts from users the current user is following
